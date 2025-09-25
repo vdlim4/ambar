@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -32,6 +36,7 @@ header h1 {
     font-size: 20px;
     text-decoration: none;
     transition: 0.4s;
+    scroll-behavior: smooth;
 }
 
 .menu-header a:hover {
@@ -136,7 +141,9 @@ header h1 {
 #about {
     align-content: center;
     background-color: #EFE7DB;
-    padding: 3rem 0;
+    padding: 5rem 0;
+    border-top-left-radius: 50% 5%;
+    border-top-right-radius: 50% 5%;
 }
 
 .about-div {
@@ -148,11 +155,11 @@ header h1 {
     width: 45%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
 }
 
 .about-img img {
-    width: 650px;
+    width: 550px;
     border-radius: 13px;
 }
 
@@ -210,6 +217,45 @@ header h1 {
 .card-about ul li {
     margin-top: 10px;
     font-weight: bold;
+}
+
+#services {
+    margin-top: -3rem;
+}
+
+.services-title {
+    display: flex;
+    justify-content: center;
+}
+
+#services h1 {
+    color: #001933;
+    text-align: center;
+    display: flex;
+    background-color: #FAF8F3;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 0 10px 0;
+    padding: 1rem 0;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.342);
+}
+
+.cards-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem 0;
+    gap: 3rem; 
+}
+
+.card-service {
+    width: 400px;
+    height: 500px;
+    background-color: #FAF8F3;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.342);
 }
 
 footer {
