@@ -246,8 +246,8 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem 0;
-    gap: 3rem; 
+    gap: 3rem;
+    padding: 5rem 0; 
 }
 
 .card-service {
@@ -319,4 +319,10 @@ footer {
     font-weight: 500;
     justify-content: center;
     width: 100%;
+}
+
+@media screen and (max-width: 1700px) {
+    .container {
+        margin: 0 10rem;
+    }
 }
