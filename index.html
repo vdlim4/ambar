@@ -7,6 +7,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/abde0d8f71.js" crossorigin="anonymous"></script>
         <title>Ambar Consultoria</title>
     </head>
@@ -72,23 +74,63 @@
             </section>
             <section id="services">
                 <div class="services-title container">
-                    <h1>Especialidades (qual cor?)</h1>
+                    <h1 class="fw-bold">Especialidades</h1>
                 </div>
                 <div class="cards-services container">
-                    <div class="card-service">
-
+                    <div class="card-service d-flex flex-column">
+                        <h3 class="fw-bold text-center">Recrutamento e Seleção</h3>
+                        <p class="mt-2">Conectamos talentos às empresas certas por meio de processos humanizados, estratégicos e alinhados à cultura organizacional.</p>
+                        <ul class="d-flex flex-column gap-1">
+                            <li class="text-start">Condução completa de processos seletivos (operacionais a estratégicos)</li>
+                            <li class="text-start">Mapeamento de perfil comportamental e técnico</li>
+                            <li class="text-start">Entrevistas estruturadas e por competência</li>
+                            <li class="text-start">Construção de critérios de seleção alinhados ao negócio</li>
+                            <li class="text-start">Apoio à liderança na tomada de decisão</li>
+                            <li class="text-start">Experiência positiva para os(as) candidatos(as)</li>
+                        </ul>
                     </div>
-                    <div class="card-service">
-
+                    <div class="card-service d-flex flex-column">
+                        <h3 class="fw-bold text-center">Treinamento e Desenvolvimento</h3>
+                        <p class="mt-2">Impulsionamos o crescimento de pessoas e equipes por meio de soluções formativas práticas e alinhadas aos desafios da organização</p>
+                        <ul class="d-flex flex-column gap-1">
+                            <li class="text-start">Levantamento de Necessidades de Treinamento (LNT)</li>
+                            <li class="text-start">Criação de trilhas de aprendizagem por área ou tema</li>
+                            <li class="text-start">Desenvolvimento de conteúdos, oficinas e workshops</li>
+                            <li class="text-start">Programas de capacitação técnica e comportamental</li>
+                            <li class="text-start">Avaliação de aprendizagem e impacto</li>
+                        </ul>
                     </div>
-                    <div class="card-service">
-
+                    <div class="card-service d-flex flex-column">
+                        <h3 class="fw-bold text-center">Experiência do Colaborador</h3>
+                        <p class="mt-2">Cuidamos de toda a jornada do colaborador com estratégias que fortalecem vínculos, aumentam o engajamento e promovem bem-estar.</p>
+                        <ul class="d-flex flex-column gap-1">
+                            <li class="text-start">Construção ou revisão da jornada do colaborador</li>
+                            <li class="text-start">Integração, permanência e desligamento humanizado</li>
+                            <li class="text-start">Diagnóstico de clima organizacional e engajamento</li>
+                            <li class="text-start">Programas de escuta ativa e valorização interna</li>
+                            <li class="text-start">Criação de ações para fortalecimento da cultura organizacional</li>
+                        </ul>
                     </div>
-                    <div class="card-service">
-
+                    <div class="card-service d-flex flex-column">
+                        <h3 class="fw-bold text-center">Admissão e Processos Administrativos de RH</h3>
+                        <p class="mt-2">Organizamos os bastidores do RH para garantir agilidade, segurança e acolhimento desde o primeiro contato com o(a) colaborador(a).</p>
+                        <ul class="d-flex flex-column gap-1">
+                            <li class="text-start">Apoio nos processos de admissão e integração</li>
+                            <li class="text-start">Conferência e organização de documentos</li>
+                            <li class="text-start">Gestão de benefícios e cadastros</li>
+                            <li class="text-start">Fluxos e rotinas administrativas de RH</li>
+                            <li class="text-start">Interface com DP e sistemas de gestão</li>
+                        </ul>
                     </div>
-                    <div class="card-service">
-
+                    <div class="card-service d-flex flex-column">
+                        <h3 class="fw-bold text-center">Projetos Personalizados</h3>
+                        <p class="mt-2">Entregamos soluções sob medida para necessidades específicas, com foco estratégico, humano e adaptado à realidade de cada cliente.</p>
+                        <ul class="d-flex flex-column gap-1">
+                            <li class="text-start">Diagnósticos organizacionais e mapeamentos internos</li>
+                            <li class="text-start">Estruturação de políticas e processos de RH</li>
+                            <li class="text-start">Implantação de plano de cargos, salários e trilhas de carreira</li>
+                            <li class="text-start">Apoio em mudanças organizacionais e projetos especiais</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -113,7 +155,7 @@
                     </div>
                     <div>
                         <nav class="nav-contact">
-                            <a href="mailto:ambarconsultoriarh@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> ambarconsultoriarh@gmail.com</a>
+                            <a href="https://mailto:ambarconsultoriarh@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> ambarconsultoriarh@gmail.com</a>
                         </nav>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #001933;
+    background-color: #001933 !important;
 }
 
 .container {
@@ -256,6 +256,29 @@ header h1 {
     background-color: #FAF8F3;
     border-radius: 10px 0 10px 0;
     box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.342);
+    padding: 2rem;
+    color: #001933;
+}
+
+.card-service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-service ul li {
+    position: relative;
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+.card-service ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #F05C00;
 }
 
 footer {
@@ -319,10 +342,4 @@ footer {
     font-weight: 500;
     justify-content: center;
     width: 100%;
-}
-
-@media screen and (max-width: 1700px) {
-    .container {
-        margin: 0 10rem;
-    }
 }
