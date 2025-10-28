@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    margin: 0 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
     background-color: #001933 !important;
 }
 
@@ -78,6 +78,7 @@ header h1 {
 }
 
 .call-btns button {
+    color: #001933;
     font-family: "Poppins", sans-serif;
     border-radius: 10px;
     cursor: pointer;
@@ -279,6 +280,92 @@ header h1 {
     left: 0;
     top: 0;
     color: #F05C00;
+}
+
+#clients {
+    background-color: #EFE7DB;
+    border-top-left-radius: 30% 5%;
+    border-top-right-radius: 30% 5%;
+}
+
+.card-clients {
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.342);
+    border-radius: 10px;
+    background-color: #FAF8F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#clients h1 {
+    color: #EFE7DB;
+    text-align: center;
+    display: flex;
+    background-color: #001933;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.body-clients {
+    padding: 2rem;
+    color: #001933;
+    font-size: 1.1rem;
+}
+
+.body-clients ul {
+    list-style: none;
+    padding: 0;
+}
+
+.body-clients ul li {
+    position: relative;
+    padding-left: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.body-clients ul li::before {
+    content: "\f140";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #A3B1C6;
+}
+
+.clients-btns {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.clients-btns button {
+    color: #001933;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 48px;
+    padding: 0 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.clients-btn {
+    background-color: #A3B1C6;
+    transition: 0.4s;
+}
+
+.clients-btn:hover {
+    background-color: #FF9B66;
+}
+
+.clients-btn:active {
+    background-color: #A3B1C6;
 }
 
 footer {
