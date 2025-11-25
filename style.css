@@ -21,9 +21,8 @@ header .container {
     height: 100px;
 }
 
-header h1 {
-    color: #EFE7DB;
-    font-size: 34px;
+.logo-header {
+    height: 80px;
 }
 
 .menu-header {
@@ -42,6 +41,36 @@ header h1 {
 .menu-header a:hover {
     color: #F05C00;
     transition: 0.4s;
+}
+
+.scroll-btn-div {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.scroll-btn {
+    color: #001933;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0d4782;
+    transition: 0.3s;
+}
+
+.scroll-btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.scroll-btn:active {
+    transform: scale(1);
+    transition: 0.3s;
 }
 
 #call {
@@ -140,11 +169,21 @@ header h1 {
 }
 
 #about {
+    position: relative;
     align-content: center;
     background-color: #EFE7DB;
     padding: 5rem 0;
     border-top-left-radius: 50% 5%;
     border-top-right-radius: 50% 5%;
+    overflow: hidden;
+}
+
+#about::before {
+    opacity: 30%;
+    content: url(imgs/logo-simbolo.png);
+    position: absolute;
+    top: -410PX;
+    right: -1000px;
 }
 
 .about-div {
@@ -157,6 +196,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: start;
+    z-index: 1;
 }
 
 .about-img img {
@@ -170,6 +210,7 @@ header h1 {
     flex-direction: column;
     align-items: end;
     justify-content: center;
+    z-index: 1;
 }
 
 .about-text h1 {
@@ -241,6 +282,7 @@ header h1 {
     border-radius: 10px 0 10px 0;
     padding: 1rem 0;
     box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.342);
+    z-index: 1;
 }
 
 .cards-services {
@@ -248,7 +290,7 @@ header h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
-    padding: 5rem 0; 
+    padding: 5rem 0;
 }
 
 .card-service {
@@ -259,6 +301,7 @@ header h1 {
     box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.342);
     padding: 2rem;
     color: #001933;
+    z-index: 1;
 }
 
 .card-service ul {
@@ -368,18 +411,82 @@ header h1 {
     background-color: #A3B1C6;
 }
 
+#feedbacks h1 {
+    color: #EFE7DB;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#feedbacks .swiper {
+    height: 500px;
+    color: #EFE7DB;
+}
+
+.swiper-slide {
+    color: #001933;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    position: relative;
+    min-width: 395px !important;
+}
+
+.div-img-feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.div-img-feedback .img-feedback{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.div-img-feedback .stars-feedback{
+    height: 25px;
+    width: 110px;
+    border-radius: 44px;
+    margin-top: -10px;
+}
+
+.div-content-feedback {
+    background-color: #EFE7DB;
+    margin-top: 50px;
+    padding: 110px 20px 10px 20px;
+    border-radius: 20px;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-content-feedback p {
+    font-size: 14px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #FAF8F3;
     height: 250px;
-    color: #001933;
+    color: #0B2B4A;
+}
+
+.logo-footer {
+    height: 100px;
 }
 
 .nav-contact a, .nav-contact-icons a {
     text-decoration: none;
-    color: #001933;
+    color: #0d4782;
     font-size: 20px;
     font-weight: bold;
 }
@@ -399,7 +506,7 @@ footer {
 }
 
 .nav-contact-icons span {
-    color: #001933;
+    color: #0d4782;
     font-weight: bold;
 }
 

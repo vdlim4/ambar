@@ -8,14 +8,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/abde0d8f71.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <title>Ambar Consultoria</title>
     </head>
     <body>
-        <header>
+        <header id="header">
             <div class="container">
-                <h1 class="fw-bold">ÂMBAR</h1>
+                <img src="/imgs/logo-horizontal-fundo-escuro.png" class="logo-header" alt="Logo ambar horizontal">
                 <nav class="menu-header">
                     <a href="#about">Sobre nós</a>
                     <a href="#services">Especialidades</a>
@@ -25,13 +27,18 @@
             </div>
         </header>
         <main>
+            <div class="scroll-btn-div">
+                <a href="#header" class="scroll-btn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </a>
+            </div>
             <section class="container" id="call">
                 <div class="call-text">
                     <h1>Transformando empresas e carreiras com um RH mais humano e estratégico</h1>
                     <p>Na ÂMBAR, acreditamos que o desenvolvimento humano é o caminho para organizações mais fortes, colaborativas e sustentáveis.</p>
                     <div class="call-btns">
-                        <button type="button" class="call-btn-1">Quero estruturar meu RH</button>
-                        <button type="button" class="call-btn-2">Quero crescer na minha carreira</button>
+                        <button type="button" class="call-btn-1" onclick="location.href='https://wa.me/5541991592683?text=Olá, gostaria de estruturar meu RH!'">Quero estruturar meu RH</button>
+                        <button type="button" class="call-btn-2" onclick="location.href='https://wa.me/5541991592683?text=Olá, gostaria crescer na minha carreira!'">Quero crescer na minha carreira</button>
                     </div>
                 </div>
                 <div class="call-img">
@@ -144,7 +151,7 @@
                                     </ul>
                                 </div>
                                 <div class="clients-btns justify-content-center py-4">
-                                    <button type="button" class="clients-btn">Quero estruturar meu RH</button>
+                                    <button type="button" onclick="location.href='https://wa.me/5541991592683?text=Olá, gostaria de estruturar meu RH!'" class="clients-btn">Quero estruturar meu RH</button>
                                 </div>
                             </div>
                         </div>
@@ -159,11 +166,111 @@
                                     </ul>
                                 </div>
                                 <div class="clients-btns justify-content-center py-4">
-                                    <button type="button" class="clients-btn">Quero crescer na minha carreira</button>
+                                    <button type="button" onclick="location.href='https://wa.me/5541991592683?text=Olá, gostaria crescer na minha carreira!'" class="clients-btn">Quero crescer na minha carreira</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section id="feedbacks">
+                <div class="position-relative">
+                    <h1><i class="fa-regular fa-comment" style="color: #F05C00;"></i> Feedbacks</h1>
+                    <div class="swiper my-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="div-img-feedback">
+                                    <img class="img-feedback" src="imgs/feedbacks/simone-cristina.png" alt="">
+                                    <img class="stars-feedback" src="imgs/feedbacks/stars.png" alt="">
+                                </div>
+                                <div class="div-content-feedback">
+                                    <h3 class="text-center">Simone Cristina</h3>
+                                    <p class="text-center">A Âmbar me ajudou muito no processo da minha recolocação no mercado de trabalho. Me deram todo o apoio necessário na atualização do meu currículo e LinkedIn, além de dicas de como ser bem sucedida em uma entrevista.  Sou muito grata porque através dessa capacitação fui contratada e estou muito feliz.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="div-img-feedback">
+                                    <img class="img-feedback" src="imgs/feedbacks/luiza-britto.png" alt="">
+                                    <img class="stars-feedback" src="imgs/feedbacks/stars.png" alt="">
+                                </div>
+                                <div class="div-content-feedback">
+                                    <h3 class="text-center">Luiza Britto</h3>
+                                    <p class="text-center">Eu estava há bastante tempo me sentindo perdida e desvalorizada, sem conseguir encontrar uma empresa onde eu realmente tivesse confiança para exercer minha função. Com a consultoria da Âmbar, fui bem direcionada, consegui entender melhor o que eu gostaria de alcançar profissionalmente e, principalmente, recuperei minha confiança. Hoje estou em uma empresa onde me sinto valorizada, vejo possibilidades reais de crescimento e faço algo que gosto de verdade...</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="div-img-feedback">
+                                    <img class="img-feedback" src="imgs/feedbacks/helton-santos.png" alt="">
+                                    <img class="stars-feedback" src="imgs/feedbacks/stars.png" alt="">
+                                </div>
+                                <div class="div-content-feedback">
+                                    <h3 class="text-center">Helton Santos</h3>
+                                    <p class="text-center">Quero agradecer pelo empenho e profissionalismo em cada etapa do processo. Tudo foi conduzido de forma leve, fluida e com total respeito aos prazos. Em pouco tempo, vocês conseguiram entregar muito, com qualidade e atenção aos detalhes. Fiquei muito satisfeito com o resultado e, mais ainda, com o cuidado e o olhar humano durante toda a jornada. Foi um prazer ter encontrado uma equipe tão comprometida. Muito obrigado!</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="div-img-feedback">
+                                    <img class="img-feedback" src="imgs/feedbacks/thiago-santos.png" alt="">
+                                    <img class="stars-feedback" src="imgs/feedbacks/stars.png" alt="">
+                                </div>
+                                <div class="div-content-feedback">
+                                    <h3 class="text-center">Thiago Santos</h3>
+                                    <p class="text-center">A palestra trouxe não só reflexões, mas também exemplos práticos que se conectaram com o nosso dia a dia. Falamos sobre o conceito de saúde mental, sobre emoções e autocuidado, a relação entre alimentação e bem-estar e, acima de tudo, entendemos que saúde mental é cuidar do todo. O material didático e a forma como o conteúdo foi conduzido nos proporcionaram momentos de conexão e aprendizado que vão muito além do ambiente de trabalho...</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="div-img-feedback">
+                                    <img class="img-feedback" src="imgs/feedbacks/odair-novais.png" alt="">
+                                    <img class="stars-feedback" src="imgs/feedbacks/stars.png" alt="">
+                                </div>
+                                <div class="div-content-feedback">
+                                    <h3 class="text-center">Odair Novais</h3>
+                                    <p class="text-center">Tive a oportunidade de participar de uma palestra com enfoque social, promovida pela equipe da Âmbar, na igreja onde faço parte. Quero agradecer o excelente trabalho realizado, que nos orientou a desenvolver um perfil assertivo para atuar no mercado de trabalho, além de apresentar estratégias práticas para essa aplicação. Coloquei os ensinamentos em prática e, após alguns anos, consegui retornar ao mercado de trabalho.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="div-img-feedback">
+                                    <img class="img-feedback" src="imgs/feedbacks/alex-de-carvalho.png" alt="">
+                                    <img class="stars-feedback" src="imgs/feedbacks/stars.png" alt="">
+                                </div>
+                                <div class="div-content-feedback">
+                                    <h3 class="text-center">Alex De Carvalho</h3>
+                                    <p class="text-center">A elaboração das informações foi feita com notável competência, apresentando tópicos bem estruturados e conduzidos com alta expertise. As dúvidas foram esclarecidas com clareza e precisão, transmitindo total segurança ao cliente ao longo de todo o processo. Um verdadeiro exemplo de profissionalismo e dedicação.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="div-img-feedback">
+                                    <img class="img-feedback" src="imgs/feedbacks/eduardo-seima.png" alt="">
+                                    <img class="stars-feedback" src="imgs/feedbacks/stars.png" alt="">
+                                </div>
+                                <div class="div-content-feedback">
+                                    <h3 class="text-center">Eduardo Seima</h3>
+                                    <p class="text-center">Tive a oportunidade de contar com a Âmbar para a revisão do meu perfil no LinkedIn e fiquei extremamente satisfeito com o resultado. A equipe demonstrou profissionalismo, atenção aos detalhes e um olhar estratégico para destacar minhas experiências e competências de forma clara e atrativa. O processo foi conduzido com muita transparência, sempre trazendo sugestões assertivas que realmente agregaram valor à minha apresentação profissional...</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="div-img-feedback">
+                                    <img class="img-feedback" src="imgs/feedbacks/jeovana-bovenschulte.png" alt="">
+                                    <img class="stars-feedback" src="imgs/feedbacks/stars.png" alt="">
+                                </div>
+                                <div class="div-content-feedback">
+                                    <h3 class="text-center">Jeovana Bovenschulte</h3>
+                                    <p class="text-center">Agradeço à Âmbar pela consultoria no meu PDA. O processo foi muito bem estruturado, com orientações claras e uma condução objetiva por parte da equipe. A devolutiva foi extremamente esclarecedora, trazendo informações detalhadas e exemplos práticos do dia a dia. Todo o processo foi conduzido com transparência e respeito às minhas escolhas, o que tornou a experiência ainda mais positiva...</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="div-img-feedback">
+                                    <img class="img-feedback" src="imgs/feedbacks/jeronima-dias.png" alt="">
+                                    <img class="stars-feedback" src="imgs/feedbacks/stars.png" alt="">
+                                </div>
+                                <div class="div-content-feedback">
+                                    <h3 class="text-center">Jeronima Dias</h3>
+                                    <p class="text-center">Antes, o LinkedIn era apenas mais uma rede social para mim. Mas, graças ao trabalho incrível da equipe da Âmbar com acompanhamento e orientação, ele se tornou uma ferramenta poderosa de aprendizado e inovação! Minha rede de contatos cresceu e cresce a cada dia, minha visão de trabalho se transformou em visão de carreira e, hoje, eu entendo que é possível crescer como pessoa e profissional no ambiente certo e realizando o que gosta...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
         </main>
@@ -171,7 +278,7 @@
             <div class="container">
                 <div class="contact-div">
                     <div class="footer-logo">
-                        <h1 class="fw-bold">ÂMBAR</h1>
+                        <img src="imgs/logo-horizontal.png" class="logo-footer" alt="Simbolo âmbar">
                     </div>
                     <div>
                         <nav class="nav-contact-icons">
@@ -182,12 +289,12 @@
                     </div>
                     <div>
                         <nav class="nav-contact">
-                            <a href="https://wa.me/5541991592683" target="_blank"><i class="fa-brands fa-whatsapp"></i> (41) 9 9159-2683</a>
+                            <a href="https://wa.me/5541991592683?text=Olá, gostaria de saber mais sobre os serviços ofertados pela Âmbar!" target="_blank"><i class="fa-brands fa-whatsapp"></i> (41) 9 9159-2683</a>
                         </nav>
                     </div>
                     <div>
                         <nav class="nav-contact">
-                            <a href="https://mailto:ambarconsultoriarh@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> ambarconsultoriarh@gmail.com</a>
+                            <a href="mailto:ambarconsultoriarh@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> ambarconsultoriarh@gmail.com</a>
                         </nav>
                     </div>
                 </div>
@@ -196,3 +303,14 @@
         </footer>
     </body>
 </html>
+<script>
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 5,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+        },
+        loop: true,
+        spaceBetween: 30,
+    });
+</script>
