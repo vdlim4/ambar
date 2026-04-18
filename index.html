@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
         <link rel="shortcut icon" href="imgs/icon.png">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
             <div class="container">
                 <img src="imgs/logo-horizontal-fundo-escuro.png" class="logo-header" alt="Logo ambar horizontal">
                 <nav class="menu-header">
-                    <a href="#about">Sobre nós</a>
+                    <a href="#about-us">Sobre nós</a>
                     <a href="#services">Especialidades</a>
                     <a href="#">Blog</a>
                     <a href="#">Contato</a>
@@ -76,6 +76,56 @@
                                 <li>Transparência</li>
                                     Clareza e honestidade em todas as interações. Incentivamos a comunicação aberta e o compartilhamento genuíno de ideias e feedbacks.
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about-us" class="position-relative">
+                <div class="services-title container">
+                    <h1 class="fw-bold">Sobre nós</h1>
+                </div>
+                <div class="position-relative" style="margin-bottom: 6rem;">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; overflow: hidden;" class="swiper-about container">
+                        <!-- <div class="parallax-bg" style="
+                            background-image: url(https://swiperjs.com/demos/images/nature-1.jpg);" data-swiper-parallax="-23%">
+                        </div> -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="w-100">
+                                    <div class="title" data-swiper-parallax="-300">Beatriz Domingos</div>
+                                    <div class="subtitle" data-swiper-parallax="-200">Departamento Pessoal</div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        Beatriz é graduada em Recursos Humanos e pós-graduanda em Gestão de Pessoas, com foco em RH estratégico e planejamento organizacional. Possui especialização em Departamento Pessoal e, ao longo de sua trajetória, desenvolveu um olhar atento tanto para a estruturação de processos quanto para o cuidado com as pessoas, sempre buscando equilíbrio entre eficiência operacional e experiência do colaborador. Atua na área de Recursos Humanos há 6 anos.
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="/imgs/beatriz-perfil.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="title" data-swiper-parallax="-300">Giovana Sá</div>
+                                    <div class="subtitle" data-swiper-parallax="-200">Recrutamento e Seleção</div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        Giovana é graduada em Marketing e Recursos Humanos, com pós-graduação em Departamento Pessoal e Psicologia Organizacional. Atualmente, está em formação em Gestão da Experiência do Cliente e também se especializando em Design Organizacional e em Educação a Distância e Novas Tecnologias Educacionais. Com 4 anos de experiência em RH, possui forte atuação na implantação de processos e estruturação de procedimentos, contribuindo para organizações mais organizadas, eficientes e alinhadas às novas demandas do mercado.
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="/imgs/giovana-perfil.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="title" data-swiper-parallax="-300">Jheniffer Guimarães</div>
+                                    <div class="subtitle" data-swiper-parallax="-200">Treinamento & Desenvolvimento</div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        Jhenifer é graduada em Administração e pós-graduada em Gestão de Pessoas e Dinâmicas de Grupo. Sua atuação é voltada ao comportamento humano, treinamento e desenvolvimento, conduzindo mentorias de carreira e apoiando o crescimento profissional de indivíduos e equipes. Com mais de 12 anos de experiência, dedica-se ao desenvolvimento de líderes e ao fortalecimento de equipes, promovendo ambientes mais conscientes, colaborativos e produtivos.
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="/imgs/jheniffer-perfil.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -137,7 +187,7 @@
                     </div>
                 </div>
             </section>
-            <section id="clients">
+            <section id="clients" class="py-5">
                 <div class="container py-5">
                     <div class="row g-4 justify-content-around">
                         <div class="col-12 col-lg-6">
@@ -305,6 +355,16 @@
     </body>
 </html>
 <script>
+    var swiper = new Swiper(".swiper-about", {
+        speed: 600,
+        parallax: true,
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: true,
+        // },
+        loop: true,
+    });
+
     var swiper = new Swiper(".swiper", {
         slidesPerView: 5,
         autoplay: {
@@ -313,5 +373,19 @@
         },
         loop: true,
         spaceBetween: 30,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+            },
+        },
     });
 </script>

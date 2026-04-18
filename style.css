@@ -182,8 +182,16 @@ header .container {
     opacity: 30%;
     content: url(imgs/logo-simbolo.png);
     position: absolute;
-    top: -410PX;
+    top: -410px;
     right: -1000px;
+}
+
+#about-us::before {
+    opacity: 30%;
+    content: url(imgs/logo-simbolo.png);
+    position: absolute;
+    top: -150px;
+    left: -1000px;
 }
 
 .about-div {
@@ -216,7 +224,6 @@ header .container {
 .about-text h1 {
     font-size: 34px;
     color: #001933;
-    text-decoration: underline;
 }
 
 .about-text p {
@@ -259,6 +266,82 @@ header .container {
 .card-about ul li {
     margin-top: 10px;
     font-weight: bold;
+}
+
+#about-us {
+    margin-top: -2rem;
+}
+
+#about-us h1 {
+    color: #001933;
+    text-align: center;
+    display: flex;
+    background-color: #FAF8F3;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 0 10px 0;
+    padding: 1rem 0;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.342);
+    z-index: 1;
+}
+
+.swiper-about {
+    height: 700px;
+    color: #EFE7DB;
+}
+
+.swiper-about .swiper-slide {
+    padding: 5rem 60px;
+    color: #EFE7DB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-about .swiper-slide .text {
+    color: #1a1a1a;
+    background-color: #EFE7DB;
+    margin: 0;
+    margin-right: 40px;
+    padding: 40px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.swiper-about .swiper-slide img {
+    height: 90%;
+    border-radius: 24px;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.459);
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-about .swiper-slide .title {
+    font-size: 41px;
+    font-weight: 600;
+}
+
+.swiper-about .swiper-slide .subtitle {
+    font-size: 24px;
+    margin: 1rem 0;
+    
+}
+
+.swiper-about .swiper-slide .text {
+    font-size: 18px;
+    line-height: 1.3;
 }
 
 #services {
@@ -422,7 +505,7 @@ header .container {
     color: #EFE7DB;
 }
 
-.swiper-slide {
+#feedbacks .swiper .swiper-slide {
     color: #001933;
     display: flex !important;
     flex-direction: column;
@@ -521,7 +604,7 @@ footer {
     gap: 8px;
 }
 
-.nav-contact a i, .nav-contact-icons a i {
+.nav-contact a i, .nav-contact-icon s a i {
     font-size: 30px;
     transition: 0.4s;
 }
@@ -536,4 +619,184 @@ footer {
     font-weight: 500;
     justify-content: center;
     width: 100%;
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    #about::before {
+        display: none;
+    }
+
+    #about-us::before {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    header .container {
+        height: max-content;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .menu-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-header a {
+        font-size: 16px;
+    }
+
+    #call {
+        flex-direction: column;
+        padding: 0 1rem;
+        height: max-content;
+        margin-bottom: 3rem;
+    }
+
+    .call-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .call-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .call-text p {
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    .call-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .call-btns button {
+        font-size: 14px;
+    }
+
+    .call-img {
+        display: none;
+    }
+
+    #about {
+        border-top-left-radius: 80% 3%;
+        border-top-right-radius: 80% 3%;
+        padding: 3rem 0;
+    }
+
+    .about-div {
+        flex-direction: column-reverse;
+    }
+
+    .about-text {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-text h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    #about-us h1 {
+        width: max-content;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .swiper-about {
+        height: max-content;
+    }
+
+    #about-us .swiper-slide {
+        padding: 0;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #about-us .swiper-slide img {
+        display: none;
+    }
+
+    #about-us .swiper-slide .title {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    #about-us .swiper-slide .subtitle {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+
+    
+    #about-us .swiper-slide .text {
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+    }
+
+    #services h1 {
+        width: max-content;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    #clients {
+        border-top-left-radius: 30% 5%;
+        border-top-right-radius: 30% 5%;
+    }
+
+    .cards-services {
+        padding: 3rem 1rem;
+    }
+
+    .card-service {
+        padding: 1rem;
+    }
+
+    footer {
+        height: max-content;
+    }
+
+    .contact-div {
+        height: max-content;
+        flex-direction: column;     
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .nav-contact a {
+        font-size: 15px;
+    }
+
+    .scroll-btn {
+        opacity: 50%;
+    }
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+
 }
